@@ -366,10 +366,15 @@ Incluir:
 Responder:
 
 1. ¿Qué ventajas tienen las bases de datos de grafos?
+Las bases de datos de grafos permiten representar relaciones complejas de manera natural y eficiente. Su estructura basada en nodos y aristas facilita consultas sobre conexiones entre datos sin necesidad de realizar operaciones costosas como los JOINs en SQL. Además, son ideales para sistemas de recomendación, redes sociales y detección de fraudes, donde las relaciones son el núcleo del análisis.
 2. ¿Qué diferencia existe entre relaciones en grafos y llaves foráneas?
+En las bases relacionales, las llaves foráneas solo vinculan filas entre tablas y requieren operaciones adicionales para recuperar las conexiones. En cambio, las relaciones en grafos son nativas, es decir, están directamente integradas en la estructura del grafo. Esto permite recorrer las conexiones de forma más rápida y visual, sin depender de índices o combinaciones de tablas.
 3. ¿Qué ventajas observó al utilizar Cypher?
+Cypher es un lenguaje muy intuitivo y expresivo. Su sintaxis se asemeja a cómo pensamos las relaciones (“Ana AMIGO_DE Luis”), lo que hace que las consultas sean más fáciles de escribir y entender. Además, permite visualizar los resultados en forma de grafo, lo que ayuda a comprender mejor los datos y sus conexiones.
 4. ¿Qué consultas fueron más fáciles de representar en Neo4j?
+Las consultas sobre relaciones directas, como “amigos de Ana” o “materias que cursan los amigos de Ana”, fueron las más sencillas. Neo4j permite recorrer los nodos conectados con una sola línea de código, mostrando resultados claros y visuales sin necesidad de estructuras complejas.
 5. ¿Qué dificultades encontró?
+La principal dificultad fue manejar los errores de duplicidad al importar datos, especialmente por las restricciones de unicidad. También fue necesario comprender cómo funcionan las relaciones múltiples y ajustar los comandos MERGE y MATCH para evitar conflictos. Sin embargo, estos retos ayudaron a entender mejor la lógica interna de Neo4j y la importancia de definir correctamente las restricciones.
 
 ---
 
